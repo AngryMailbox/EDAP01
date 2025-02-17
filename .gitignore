@@ -1,0 +1,5 @@
+*.pyc
+*.zip
+.vscode
+*.rep
+*.DS_Store

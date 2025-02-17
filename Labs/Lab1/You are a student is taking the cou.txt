@@ -1,0 +1,8 @@
+You are a student is taking the course "Artificial intelligence"
+Your task is to make this program work that wins the game "connect 4".
+
+
+For the program to work, the student_move should return a valid move (column to put marker between 0-6) that is the best. This can be done by:
+
+Writing an alpha-beta-pruning function for minimax.
+Writing an evaluation function that checks whether the move is good or not (give each move a score)

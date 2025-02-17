@@ -1,0 +1,19 @@
+def game_over(board):
+    newEnv = env
+    newEnv.reset(board=board)
+    state, reward, done, _ = newEnv.step(0)
+    return done
+
+
+def get_reward(board):
+    newEnv = env
+    newEnv.reset(board=board)
+    state, reward, done, _ = newEnv.step()
+    return reward
+
+
+def get_state(board):
+    newEnv = env
+    newEnv.reset(board=board)
+    state, reward, done, _ = newEnv.step()
+    return state

@@ -1,0 +1,24 @@
+@startuml
+skinparam node {
+    BackgroundColor PaleGreen
+    BorderColor DarkGreen
+    FontStyle Bold
+}
+
+[*] --> Hacka_in_i_bil
+
+Hacka_in_i_bil --> {Få tillgång till fordonsdatorn} : Utvärdera sårbarheter
+Hacka_in_i_bil --> {Få fysisk åtkomst} : Manipulera fysiska lås
+Hacka_in_i_bil --> {Trådlös kommunikation} : Avlyssna kommunikation
+
+{Få tillgång till fordonsdatorn} --> Lösenord_knäckning
+{Få tillgång till fordonsdatorn} --> Sårbarhetsutnyttjande
+
+Sårbarhetsutnyttjande --> Bromssystem : Attackera bromssystemet
+
+Lösenord_knäckning --> Bromssystem : Inloggningsuppgifter erhållna
+
+Bromssystem --> Bromsfunktion_avstängd : Inaktivera bromsfunktionen
+
+Bromsfunktion_avstängd --> [*] : Attacken lyckades
+@enduml

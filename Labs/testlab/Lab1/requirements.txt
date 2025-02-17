@@ -1,0 +1,5 @@
+gym==0.26.2
+numpy==1.26.4
+Pillow==10.2.0
+pygame==2.5.2
+Requests==2.31.0
